@@ -1,0 +1,21 @@
+.header {
+    width: 100%;
+    height: 61px;
+    background-color: #fff;
+    box-shadow: 0 1px 2px #aaa;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+nav ul {
+    display: flex;
+    padding: 20px 0;
+}
+
+nav ul li {
+    margin-right: 30px;
+}

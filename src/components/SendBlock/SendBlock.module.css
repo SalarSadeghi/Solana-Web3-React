@@ -1,0 +1,65 @@
+.sendBlock {
+    width: 100%;
+}
+
+.createKey{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.createKey button {
+    margin-left: 0;
+    margin-top: 10px;
+    background-color: rgb(0, 255, 163);
+}
+
+
+.keyShow {
+    width: 100%;
+}
+
+.keyShow button {
+    margin-left: 40px;
+}
+
+.keyShow input {
+    text-align: center;
+}
+
+.sendOperation {
+    width: 100%;
+    display: flex;
+}
+
+.sendOperation label {
+    margin-top: 10px;  
+}
+
+.sendInput {
+    width: 35%;
+}
+
+.sendInput input {
+    width: 100%;
+}
+
+.amountInput {
+    width: 9%;
+}
+
+.amountInput label {
+    margin-left: 40px;
+}
+
+.amountInput input {
+    margin-left: 40px;
+    width: 100%;
+}
+
+.sendOperation button {
+    margin-top: 35px;
+    margin-left: 75px;
+    background-color:  rgb(0, 255, 163);
+}

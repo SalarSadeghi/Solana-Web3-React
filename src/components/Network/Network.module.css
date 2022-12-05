@@ -1,0 +1,6 @@
+select {
+    border: none;
+    outline: none;
+    color: purple;
+    cursor: pointer;
+}
