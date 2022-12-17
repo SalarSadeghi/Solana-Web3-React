@@ -5,7 +5,7 @@ import styles from './BlockInfo.module.css'
 import Button from '../Butoon/Button'
 import AccountInfo from '../AccountInfo/AccountInfo'
 import { useState } from 'react'
-import { LAMPORTS_PER_SOL } from '@solana/web3.js'
+import { LAMPORTS_PER_SOL, PublicKey } from '@solana/web3.js'
 import Airdrop from '../Airdrop/Airdrop'
 
 export default function BlockInfo() {

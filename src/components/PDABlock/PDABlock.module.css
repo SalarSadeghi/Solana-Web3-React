@@ -24,8 +24,18 @@
     float: left; 
 }
 
-.pdaBlock form input {
+.pdaBlock form>input {
     width: 100%;
+}
+
+.seedAndsize {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.seedAndsize input {
+    width: 95%;
 }
 
 .pdaBlock form label {

@@ -12,7 +12,6 @@ export default async function Transact(myKeypair,toPublickey,amount) {
             lamports: amount,
             toPubkey: new PublicKey(toPublickey)
         })
-        console.log("hiii");
         const transaction = new Transaction().add(instruction)
         const signers = [myKeypair]
         const connection = handleConnection()

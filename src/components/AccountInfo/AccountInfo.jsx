@@ -10,7 +10,7 @@ export default async function AccountInfo(address) {
         return data
     }
     catch (err) {
-        console.log(err.message);
+        alert(err.message)
     }
 
 }

@@ -6,6 +6,7 @@ import AccountInfo from "./components/AccountInfo/AccountInfo";
 import BlockInfo from "./components/BlockInfo/BlockInfo";
 import SendBlock from "./components/SendBlock/SendBlock";
 import PDABlock from "./components/PDABlock/PDABlock";
+import { GenerateKeypair } from "./components/Keypair/GenerateKeypair";
 
 
 
@@ -15,8 +16,10 @@ function App() {
       <Header />
       <PageIntro />
       <BlockInfo />
-      <SendBlock />
-      <PDABlock />
+      <GenerateKeypair>
+          <SendBlock /> 
+          <PDABlock />
+      </GenerateKeypair>
       <Web3Box />
     </div>
   );

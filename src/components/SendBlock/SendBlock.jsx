@@ -1,13 +1,15 @@
-import React, { useRef, useState } from 'react'
+import React, { useContext, useRef, useState } from 'react'
 import Button from '../Butoon/Button'
 import Input from '../Input/Input'
-import GenerateKeypair from '../Keypair/GenerateKeypair'
+import  { useKey, GenerateKeypair } from '../Keypair/GenerateKeypair'
 import Transact from '../Transact/Transact'
 import Web3Box from '../Web3Box/Web3Box'
 import styles from './SendBlock.module.css'
 
 export default function SendBlock() {
     
+    const {key, getKey} = useKey()
+
     const [elementVisible, setElementVisible] = useState({
         createKeypairBtn: true,
         inputKeypair: false,
@@ -18,12 +20,13 @@ export default function SendBlock() {
     const [sig ,setSig] = useState("")
 
     const [sendInformation, setSendInformation] = useState({toPublickey:"", amount:""})
+    
 
-    const [key, setKey] = useState(undefined)
+    // const [key, setKey] = useState()
     
     const handleCreateKey = (e) => {
         e.preventDefault()
-        setKey(GenerateKeypair());
+        getKey();
         setElementVisible(prevState => ({...prevState, createKeypairBtn: false, inputKeypair:true}))
     }
 
